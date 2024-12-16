@@ -12,12 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('movies', function (Blueprint $table) {
-            $table->id(); // Primārā atslēga
-            $table->string('title'); // Filmas nosaukums
-            $table->string('director'); // Režisors
-            $table->string('genre'); // Žanrs
-            $table->date('release_date'); // Publicēšanas datums
-            $table->timestamps(); // Automatizētie lauki: created_at un updated_at
+            $table->id();
+            $table->timestamps();
         });
     }
 
